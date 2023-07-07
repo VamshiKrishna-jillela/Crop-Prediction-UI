@@ -69,7 +69,7 @@ function Graph(props) {
   let labelData = [];
 
   useEffect(() => {
-    async function zzz() {
+    const zzz = async () => {
       var web3 = new Web3(
         new Web3.providers.HttpProvider(process.env.REACT_APP_PROVIDER_URL)
       );
@@ -196,9 +196,10 @@ function Graph(props) {
       setCropWiseData(ff);
       setSummarizedData(dd);
       setLoadContent("Drawing Graphs For You...");
-    }
+    };
 
-    return zzz;
+    zzz();
+    return;
   }, []);
 
   function func(e) {
