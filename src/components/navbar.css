@@ -150,6 +150,7 @@ li {
 
   .menu-link {
     display: none;
+    padding-bottom: 3rem;
   }
 
   .logo,
@@ -177,7 +178,7 @@ li {
   }
 
   .mobile-menu-link ul {
-    height: 20rem;
+    height: 16rem;
     display: flex;
     justify-content: space-around;
     flex-direction: column;

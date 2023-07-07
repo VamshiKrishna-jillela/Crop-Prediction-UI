@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Draw from "./Draw";
+
 var Web3 = require("web3");
 
 const crop = [
@@ -53,6 +54,10 @@ function CropWise(x) {
     for (let j = 0; j < crop.length; j++) {
       df[crop[j]].push({ x: date, y: x[i]["label"][crop[j]] });
     }
+  }
+
+  for (let i = 0; i < crop.length; i++) {
+    df[crop[i]] = df[crop[i]].sort((a, b) => a.x - b.x);
   }
 
   return df;

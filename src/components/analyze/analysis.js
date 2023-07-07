@@ -27,7 +27,7 @@ const Analysis = () => {
               </select>
               <span className="error-span">hi hello</span>
 
-              <label className="form-label">State</label>
+              <label className="form-label">Duration</label>
               <select
                 className="form-input"
                 value={length}
