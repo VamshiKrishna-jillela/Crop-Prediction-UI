@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+.home-body {
+  background: linear-gradient(#bcd0db, #5eaed9),
+    url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordian {
+  margin: 6rem 2.5rem 9rem 2.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 3px;
+  width: 60%;
+  transition: 1s;
+}
+
+.accordian-title {
+  text-align: center;
+  font-size: 4rem;
+  padding: 15px;
+  color: #066395;
+}
+
+.question {
+  font-size: 2.5rem;
+  border-bottom: 2px black solid;
+  margin-bottom: 15px;
+  margin-left: 4rem;
+  margin-right: 1rem;
+  padding: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+.question::after {
+  content: "+";
+  position: absolute;
+  font-size: 1.8rem;
+  right: 15px;
+}
+
+.answer {
+  display: none;
+}
+
+.js {
+  font-size: 2rem;
+}
+.ajs {
+  display: block;
+  transition: opacity 0.3s, visibility 0.3s;
+  position: relative;
+  transition: 0.5s;
+  padding: 10px 10px 25px 10px;
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+
+child {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .accordian {
+    width: 100%;
+  }
+  .question {
+    font-size: 2rem;
+  }
+  .ajs {
+    font-size: 1.5rem;
+  }
+  .accordian-title {
+    font-size: 3rem;
+  }
+}
