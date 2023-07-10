@@ -33,10 +33,13 @@ const Navbar = () => {
       <nav className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
-          <h2 className="logo-span">
-            <span>S</span>mart
-            <span> F</span>arming
-          </h2>
+          <Link to="/">
+            {" "}
+            <h2 className="logo-span">
+              <span>S</span>mart
+              <span> F</span>arming
+            </h2>
+          </Link>
         </div>
 
         {/* 2nd menu part  */}

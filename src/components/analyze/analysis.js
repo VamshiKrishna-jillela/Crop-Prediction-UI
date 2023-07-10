@@ -36,11 +36,19 @@ const Analysis = () => {
                   setLength(x);
                 }}
               >
-                <option value="30">1 Month</option>
-                <option value="90"> 3 Months</option>
-                <option value="180"> 6 Months</option>
-                <option value="270"> 9 Months</option>
-                <option value="365"> 12 Months</option>
+                <option value="30">last 1 Month</option>
+                <option value="90"> last 3 Months</option>
+                <option value="180"> last 6 Months</option>
+                <option value="270"> last 9 Months</option>
+                <option value="365"> last 12 Months</option>
+                <option value="450"> last 15 Months</option>
+                <option value="540"> last 18 Months</option>
+                <option value="630"> last 21 Months</option>
+                <option value="720"> last 24 Months</option>
+                <option value="810"> last 27 Months</option>
+                <option value="900"> last 30 Months</option>
+                <option value="990"> last 33 Months</option>
+                <option value="1080"> last 36 Months</option>
               </select>
               <span className="error-span">hi hello</span>
             </div>
